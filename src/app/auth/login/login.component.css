@@ -1,0 +1,23 @@
+/* Optional: to make sure the left side bg is subtle and form is nicely padded */
+
+.login-card {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.left-title{
+  color: var(--primary);
+}
+button, button:hover{
+  background-color: var(--primary);
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+@media (max-width: 767.98px) {
+  .login-card {
+    flex-direction: column !important;
+  }
+}

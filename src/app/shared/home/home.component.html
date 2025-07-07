@@ -1,0 +1,32 @@
+ <button class="toggle-btn" (click)="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Sidebar -->
+  <div [ngClass]="isActive?'sidebar active':'sidebar'" id="sidebar">
+    <div class="brand">TaskFlow</div>
+    <i class="fa-solid fa-xmark sidebar-close-btn" (click)="toggleSidebar()"></i>
+    <nav>
+      <a routerLink="dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><i class="fas fa-chart-pie"></i> Dashboard</a>
+      <a routerLink="projects" routerLinkActive="active"><i class="fas fa-folder-open"></i> Projects</a>
+       <a href="#"><i class="fa-solid fa-list-check"></i> Task</a>
+      <a href="#"><i class="fas fa-users"></i> Team</a>
+      <a href="#"><i class="fas fa-chart-line"></i> Reports</a>
+      <a href="#"><i class="fas fa-cog"></i> Settings</a>
+    </nav>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+     <header class="topbar">
+    <div class="left"></div>
+    <div class="right">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-bell"></i>
+      <div class="profile">
+        <img src="https://i.pravatar.cc/300?img=12" alt="User" />
+      </div>
+    </div>
+  </header>
+   <router-outlet />
+  </div>

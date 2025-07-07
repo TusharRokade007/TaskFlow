@@ -1,0 +1,23 @@
+.dashboard-card {
+    background-color: white;
+     transition: 0.3s ease;
+}
+.dashboard-card .card-number{
+    color: white;
+   height: 60px;
+     width: 60px;
+    border-radius: 15px;
+     text-align: center;
+   
+}
+.dashboard-card p{
+    font-size: 0.95rem;
+}
+.dashboard-card .card-number h1{
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+.dashboard-card:hover{
+   
+    transform: scale(1.03,1.03);
+}

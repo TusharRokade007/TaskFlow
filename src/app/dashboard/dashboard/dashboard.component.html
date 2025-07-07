@@ -1,0 +1,39 @@
+<div class="container-fluid mt-4">
+    <section class="card-container">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <app-dashboard-card [cardTitle]="'Total Projects'"
+                    [cardNumber]="20"
+                    [cardNumberBgColor]="this.AppColor.purpleColor"></app-dashboard-card>
+            </div>
+            <div class="col-12 col-md-3">
+                <app-dashboard-card [cardTitle]="'Completed Tasks'"
+                    [cardNumber]="50"
+                    [cardNumberBgColor]="this.AppColor.greenColor"></app-dashboard-card>
+            </div>
+            <div class="col-12 col-md-3">
+                <app-dashboard-card [cardTitle]="'Pending Tasks'"
+                    [cardNumber]="40"
+                    [cardNumberBgColor]="this.AppColor.yellowColor"></app-dashboard-card>
+            </div>
+            <div class="col-12 col-md-3">
+                <app-dashboard-card [cardTitle]="'Total Deadlines'"
+                    [cardNumber]="40"
+                    [cardNumberBgColor]="this.AppColor.purpleColor"></app-dashboard-card>
+            </div>
+
+        </div>
+    </section>
+    <section class="charts mt-5">
+        <div class="row">
+             <div class="col-md-6 col-12 mb-5">
+               <app-dashbaord-doughnut-chart [labels]="doughnutChartLabels" [datasets]="doughnutChartDatasets"></app-dashbaord-doughnut-chart>
+            </div>
+            <div class="col-md-6 col-12">
+                <app-dashboard-bar-chart [labels]="barChartLabels" [datasets]="barChartDatasets"></app-dashboard-bar-chart>
+            </div>
+           
+        </div>
+    </section>
+
+</div>

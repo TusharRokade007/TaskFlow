@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+  --primary: #152442;
+  --accent: white;
+  --text-color: #e0e0e0;
+  --secondary: #3956c8;
+  --thridColor:#6961eb;
+}
+body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f6f6fb ;
+
+}
